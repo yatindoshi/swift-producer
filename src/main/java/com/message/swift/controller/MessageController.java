@@ -16,13 +16,16 @@ import java.util.UUID;
 @Slf4j
 public class MessageController {
 
-    @Autowired
     private MessageRepository messageRepository;
 
-    @Autowired
     private MessageProducer messageProducer;
 
-    @PostMapping("message")
+    public MessageController(MessageRepository messageRepository, MessageProducer messageProducer) {
+        this.messageRepository = messageRepository;
+        this.messageProducer = messageProducer;
+    }
+
+    @PostMapping("messages")
     @Transactional
     public Mono<Void> getHello(@RequestBody String message) {
         log.info("message has been received in controller");

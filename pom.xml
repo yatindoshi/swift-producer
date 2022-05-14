@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.message</groupId>
 	<artifactId>swift</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>swift</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -36,11 +36,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-starter</artifactId>
 		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>org.postgresql</groupId>-->
